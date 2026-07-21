@@ -131,3 +131,107 @@ The room introduced the Structured Query Language (SQL), the standard language u
 It also explained how databases maintain relationships between tables using primary keys and foreign keys, allowing related information to be stored without unnecessary duplication. These relationships improve data consistency, integrity, and scalability, making relational databases suitable for everything from small applications to large enterprise systems.
 
 Finally, the room introduced basic filtering, sorting, and querying techniques using clauses such as `WHERE`, `ORDER BY`, and `FROM`. These operations allow users to retrieve only the information they need and form the foundation for more advanced SQL queries used in application development, digital forensics, data analysis, and cybersecurity, where interacting with databases is a common task.
+
+---
+
+## What is Networking?
+
+Learned the fundamental concepts of computer networking and how devices communicate with each other to exchange data. The room introduced what a network is, the differences between the Internet and the World Wide Web (WWW), and why networking is essential for modern computing.
+
+It covered the concepts of public and private networks, devices such as clients, servers, switches, and routers, and explained how data is transmitted across networks using packets. The room also introduced IP addresses, MAC addresses, and the role they play in identifying devices at different layers of communication.
+
+Additionally, the room explained the importance of common network protocols such as TCP/IP, HTTP, HTTPS, DNS, and ICMP, showing how they enable reliable communication, website access, name resolution, and network diagnostics. These concepts provide the foundation required to understand network traffic, system communication, and later cybersecurity topics such as scanning, enumeration, and network attacks.
+
+---
+
+## Intro to LAN
+
+Learned the fundamentals of Local Area Networks (LANs) and how they allow devices within a limited geographical area, such as a home, school, or office, to communicate and share resources efficiently. The room explained the advantages of LANs, including high-speed communication, low latency, and centralized resource sharing.
+
+It introduced the main networking devices found in a LAN, such as switches, routers, and network interface cards (NICs), explaining their roles in forwarding traffic and connecting local networks to external networks like the Internet. The room also covered the difference between wired (Ethernet) and wireless (Wi-Fi) connections, highlighting their strengths and limitations.
+
+Additionally, the room explained how devices communicate using MAC addresses at the data link layer and IP addresses at the network layer, demonstrating why both are necessary for successful communication. Finally, it introduced Ethernet frames, ARP (Address Resolution Protocol), and the basic process of delivering data between devices on the same local network, providing a foundation for understanding network traffic and later topics such as packet analysis and network attacks.
+
+---
+
+# OSI Model
+
+Learned the **OSI (Open Systems Interconnection) Model**, a conceptual framework that divides network communication into seven layers. Each layer has a specific responsibility and communicates only with the layers directly above and below it, making network protocols easier to design, troubleshoot, and understand.
+
+## Layer 7 - Application
+
+Learned that the **Application Layer** is the closest layer to the user and provides network services directly to applications. It is responsible for allowing software such as web browsers, email clients, and file transfer programs to communicate over a network.
+
+Common protocols include **HTTP**, **HTTPS**, **FTP**, **SMTP**, **POP3**, **IMAP**, **DNS**, and **DHCP**.
+
+
+## Layer 6 - Presentation
+
+Learned that the **Presentation Layer** is responsible for translating data into a format that both devices can understand. It handles **data formatting, character encoding, encryption/decryption, and compression**, ensuring that information is correctly interpreted regardless of differences between systems.
+
+Examples include **TLS/SSL encryption**, **JPEG**, **PNG**, **GIF**, **MPEG**, **ASCII**, and **Unicode** encoding.
+
+
+## Layer 5 - Session
+
+Learned that the **Session Layer** establishes, manages, and terminates communication sessions between devices. It keeps track of active connections, synchronizes communication, and allows interrupted sessions to resume when possible.
+
+This layer is commonly used in services that require persistent communication, such as **RPC (Remote Procedure Call)** and **NetBIOS**.
+
+
+## Layer 4 - Transport
+
+Learned that the **Transport Layer** provides end-to-end communication between applications. It is responsible for **segmenting data, reassembling it, ensuring reliable delivery, controlling flow, and detecting transmission errors**.
+
+The room introduced the two main transport protocols:
+
+- **TCP (Transmission Control Protocol):** Connection-oriented, reliable, guarantees packet delivery and ordering.
+- **UDP (User Datagram Protocol):** Connectionless, faster, lower overhead, but does not guarantee delivery or order.
+
+This layer also introduces **port numbers**, allowing multiple network services to operate simultaneously on a single device.
+
+
+## Layer 3 - Network
+
+Learned that the **Network Layer** is responsible for routing packets between different networks. It determines the best path for data to travel from the source to the destination using **logical addressing**.
+
+The primary protocol at this layer is **IP (Internet Protocol)**, which uses **IPv4** and **IPv6** addresses. Other important protocols include **ICMP** for diagnostics and **routing protocols** used by routers.
+
+Devices operating primarily at this layer include **routers**.
+
+
+## Layer 2 - Data Link
+
+Learned that the **Data Link Layer** provides communication between devices on the same local network. It packages data into **frames**, uses **MAC addresses** for local delivery, detects transmission errors, and controls access to the physical medium.
+
+The room introduced technologies such as **Ethernet**, **Wi-Fi (802.11)**, and **ARP (Address Resolution Protocol)**, which maps IP addresses to MAC addresses.
+
+Devices operating at this layer include **switches** and **network interface cards (NICs)**.
+
+
+## Layer 1 - Physical
+
+Learned that the **Physical Layer** is responsible for transmitting raw binary data as electrical, optical, or radio signals across the physical medium. It defines hardware specifications such as cables, connectors, voltages, frequencies, and transmission speeds.
+
+Examples include **Ethernet cables**, **fiber optic cables**, **wireless radio signals**, **hubs**, and **repeaters**.
+
+
+## Encapsulation
+
+Learned how data moves through the OSI Model using a process called **encapsulation**. As data travels from Layer 7 to Layer 1, each layer adds its own header (and sometimes a trailer) containing information required for that layer's function. At the receiving device, the process is reversed through **decapsulation**, where each layer removes its corresponding information until the original application data is recovered.
+
+Understanding encapsulation is essential for analyzing network traffic, packet captures, troubleshooting communication problems, and understanding how attacks target different layers of the network stack.
+
+---
+
+# Packets & Frames
+
+Learned how data is transmitted across a network using **packets** and **frames**. A packet is the Layer 3 (Network) unit of data and contains information such as the source and destination IP addresses, while a frame is the Layer 2 (Data Link) unit that encapsulates the packet and adds source and destination MAC addresses for local delivery.
+
+## Encapsulation
+
+Learned that data is encapsulated as it moves down the OSI Model. Each layer adds its own header before transmission, and the receiving device removes these headers through **decapsulation** to recover the original data.
+
+## TTL
+
+Learned that IP packets contain a **Time To Live (TTL)** value that is decreased by each router. If it reaches zero, the packet is discarded, preventing routing loops and allowing tools like **traceroute** to work.
