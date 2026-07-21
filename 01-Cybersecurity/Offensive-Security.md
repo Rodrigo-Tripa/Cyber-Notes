@@ -1,51 +1,61 @@
-## What is Offensive Security?
+## Overview
 
-Offensive Security is the practice of testing the security of systems by simulating real-world attacks. The goal is to find vulnerabilities before malicious attackers do and help organizations fix them.
+Offensive Security is the practice of identifying and exploiting vulnerabilities to assess the security of systems, networks, and applications. Its goal is to discover weaknesses before malicious attackers can abuse them and provide recommendations to improve security.
 
-These tests are always performed with permission from the system owner.
+## Objectives
 
-## Offensive Security vs Defensive Security
+- Identify security vulnerabilities.
+- Simulate real-world attacks.
+- Assess an organization's security posture.
+- Help improve defenses by reporting findings.
 
-**Offensive Security** focuses on finding and exploiting vulnerabilities to assess security.
+## Common Activities
 
-**Defensive Security** focuses on protecting systems, detecting attacks, and responding to security incidents.
+- Reconnaissance
+- Enumeration
+- Vulnerability Assessment
+- Exploitation
+- Post-Exploitation
+- Reporting
 
-Both work together to improve an organization's overall security.
+## Common Roles
 
-## Directory Enumeration
+- Penetration Tester
+- Red Team Operator
+- Security Researcher
+- Vulnerability Researcher
 
-Directory enumeration is the process of discovering hidden files and directories on a web server.
+## Key Concepts
 
-A common tool for this is **DIRB**.
+### Ethical Hacking
 
-Example:
+Ethical hackers have permission to test systems and follow defined rules of engagement. Their objective is to improve security rather than cause damage.
 
-```bash
-dirb http://<target-ip>
-```
+### Vulnerability
 
-DIRB uses a wordlist to check whether common paths exist, such as:
+A vulnerability is a weakness in software, hardware, or configuration that can be exploited to compromise confidentiality, integrity, or availability.
 
-* `/admin`
-* `/login`
-* `/images`
-* `/backup`
+### Exploit
 
-Finding hidden directories can reveal pages or functionality that may be useful during a penetration test.
+An exploit is a technique or piece of code used to take advantage of a vulnerability.
 
-## Basic Pentesting Process
+### Reconnaissance
 
-A penetration test generally follows these steps:
+Reconnaissance is the process of gathering information about a target before attempting any attack.
+
+### Enumeration
+
+Enumeration actively collects detailed information from systems and services, such as users, ports, versions, and shared resources.
+
+## Typical Workflow
 
 1. Reconnaissance
 2. Enumeration
-3. Exploitation
-4. Post-Exploitation
-5. Reporting
+3. Vulnerability Identification
+4. Exploitation
+5. Post-Exploitation
+6. Reporting
 
-## Key Points
+## Goal
 
-* Offensive Security aims to identify vulnerabilities before attackers.
-* Directory enumeration helps discover hidden web resources.
-* DIRB is one of several tools used for directory enumeration.
-* Penetration testing follows a structured methodology rather than randomly using tools.
+The primary goal of Offensive Security is to find and demonstrate security weaknesses before real attackers can exploit them.

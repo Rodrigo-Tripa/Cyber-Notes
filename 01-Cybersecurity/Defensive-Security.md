@@ -1,21 +1,54 @@
-## Containment
+## Overview
 
-Containment is the process of limiting or stopping malicious activity to prevent further damage while the incident is being investigated.
+Defensive Security focuses on protecting systems, networks, and data against cyber attacks. It aims to prevent, detect, respond to, and recover from security incidents.
 
-The main goal is to stop the attack from spreading without necessarily removing the attacker immediately.
+## Objectives
 
-### Example
+- Prevent attacks.
+- Detect malicious activity.
+- Respond to incidents.
+- Recover systems after an attack.
 
-An attacker was sending a large number of HTTP requests to a website while attempting to discover hidden administrator directories through directory brute-forcing.
+## Common Activities
 
-To contain the attack, the malicious IP address was blocked by the firewall, preventing any further requests from reaching the web server.
+- System Monitoring
+- Threat Detection
+- Incident Response
+- Malware Analysis
+- Threat Intelligence
+- Log Analysis
 
-### Key Takeaways
+## Common Roles
 
-- Containment is one of the first phases of incident response.
-- The objective is to reduce the attack's impact as quickly as possible.
-- Common containment actions include:
-  - Blocking malicious IP addresses.
-  - Disabling compromised user accounts.
-  - Isolating infected hosts from the network.
-  - Restricting access to affected services.
+- SOC Analyst
+- Incident Responder
+- Digital Forensics Analyst
+- Malware Analyst
+- Threat Hunter
+- Security Engineer
+
+## Key Concepts
+
+### Security Operations Center (SOC)
+
+A SOC continuously monitors systems and investigates security alerts.
+
+### Threat Intelligence
+
+Threat Intelligence collects and analyzes information about current and emerging threats.
+
+### Digital Forensics and Incident Response (DFIR)
+
+DFIR focuses on investigating security incidents, determining what happened, containing attacks, and recovering affected systems.
+
+### Containment
+
+Containment limits the spread of an attack by isolating compromised systems or blocking malicious activity.
+
+### SIEM
+
+A Security Information and Event Management (SIEM) platform collects and analyzes logs from multiple systems to detect suspicious behavior.
+
+## Goal
+
+The primary goal of Defensive Security is to reduce risk by preventing attacks, detecting threats quickly, and minimizing the impact of security incidents.
