@@ -235,3 +235,49 @@ Learned that data is encapsulated as it moves down the OSI Model. Each layer add
 ## TTL
 
 Learned that IP packets contain a **Time To Live (TTL)** value that is decreased by each router. If it reaches zero, the packet is discarded, preventing routing loops and allowing tools like **traceroute** to work.
+
+---
+
+## DNS in Detail
+
+Learned how the **Domain Name System (DNS)** translates human-readable domain names into IP addresses, allowing users to access internet services without memorizing numerical addresses. The room explained that DNS functions as a distributed and hierarchical database, making name resolution scalable and fault tolerant.
+
+It covered the complete DNS resolution process, including the roles of the **recursive resolver**, **root servers**, **Top-Level Domain (TLD) servers**, and **authoritative name servers**. The room demonstrated how recursive and iterative queries work together to locate the correct DNS records and how caching reduces lookup times and network traffic.
+
+The room introduced the most common DNS record types, including **A**, **AAAA**, **CNAME**, **MX**, **TXT**, **NS**, and **SOA**, explaining the purpose of each and when they are used. It also covered concepts such as **Time To Live (TTL)**, DNS propagation, subdomains, and why multiple record types are necessary for services like websites, email, and domain verification.
+
+Finally, the room explained how DNS can be queried using tools such as **nslookup** and **dig**, highlighting their importance for troubleshooting, network administration, and cybersecurity tasks such as reconnaissance, enumeration, and identifying an organization's public infrastructure.
+
+---
+
+## HTTP in Detail
+
+Learned how the **HyperText Transfer Protocol (HTTP)** enables communication between web clients and servers. The room explained the request-response model, where a client such as a web browser sends an HTTP request to a server, which processes it and returns an HTTP response containing the requested resource or an error message.
+
+It covered the structure of HTTP messages, including the **request line**, **headers**, **body**, and the different HTTP methods. The room introduced the most common methods, such as **GET** for retrieving resources, **POST** for submitting data, **PUT** for updating existing resources, **DELETE** for removing resources, and **HEAD** for retrieving only response headers.
+
+The room also explained **URLs (Uniform Resource Locators)** and how they identify web resources through components such as the protocol, hostname, port, path, query parameters, and fragments. It demonstrated how web browsers use these components together with DNS to locate and request content from remote servers.
+
+Additionally, the room introduced **HTTP status codes**, grouping them into the five major categories: **1xx (Informational)**, **2xx (Success)**, **3xx (Redirection)**, **4xx (Client Errors)**, and **5xx (Server Errors)**. Common examples such as **200 OK**, **301 Moved Permanently**, **400 Bad Request**, **401 Unauthorized**, **403 Forbidden**, **404 Not Found**, and **500 Internal Server Error** were explained, along with what they indicate during client-server communication.
+
+Finally, the room covered **HTTP headers**, **cookies**, and **sessions**, explaining how websites maintain state across multiple requests despite HTTP being a stateless protocol. These concepts are fundamental for web development, web application security, penetration testing, and understanding attacks such as session hijacking, authentication bypasses, and insecure cookie configurations.
+
+---
+
+## How Websites Work
+
+Learned the basic architecture of modern websites and how a browser communicates with a web server using the request-response model. The room explained the difference between the **front end (client-side)**, which is rendered by the browser and interacts with the user, and the **back end (server-side)**, which processes requests and returns responses.
+
+It introduced **HTML** as the language used to structure web pages, explaining how elements and tags define the content displayed by the browser. The room also covered the role of **JavaScript**, showing how it adds interactivity and dynamic behavior by manipulating page content and responding to user actions.
+
+Finally, the room introduced the concept of **Sensitive Data Exposure**, explaining how developers can unintentionally expose confidential information through websites. It highlighted that sensitive data may be leaked in source code, client-side files, comments, configuration files, or other publicly accessible resources, emphasizing the importance of securely handling and protecting information in web applications.
+
+---
+
+## Putting It All Together
+
+Learned how the different technologies behind the web work together when accessing a website. The room tied together the concepts covered in previous rooms, showing how a browser retrieves a webpage from start to finish. A typical request begins with **DNS** resolving a domain name into an IP address, followed by the browser establishing communication with the web server using **HTTP**, after which the server returns resources such as **HTML**, **CSS**, **JavaScript**, images, and other assets that the browser renders into the final webpage. :contentReference[oaicite:0]{index=0}
+
+The room also introduced several components commonly found in modern web infrastructures. It explained how **Load Balancers** distribute incoming traffic across multiple servers to improve scalability and availability, how **Content Delivery Networks (CDNs)** cache static content on geographically distributed servers to reduce latency, how **databases** store and retrieve application data, and how **Web Application Firewalls (WAFs)** inspect and filter HTTP traffic to block malicious requests before they reach the web application. :contentReference[oaicite:1]{index=1}
+
+Finally, the room covered how **web servers** handle incoming requests, differentiate between **static** and **dynamic** content, execute server-side code when necessary, interact with databases, and generate the responses returned to clients. This room served as a high-level recap of the entire **How The Web Works** module, demonstrating how all of its components fit together to deliver modern web applications. :contentReference[oaicite:2]{index=2}
