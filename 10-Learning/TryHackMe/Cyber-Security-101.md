@@ -1,0 +1,7 @@
+## Search Skills
+
+Learned how to efficiently search for technical information, an essential skill in cybersecurity where finding accurate and up-to-date resources is often more valuable than memorizing commands. The room emphasized evaluating the credibility of sources, distinguishing official documentation from community content, and verifying information before trusting or using it.
+
+The room introduced advanced search engine operators such as `site:`, `filetype:`, quotation marks for exact matches, and keyword exclusion. These techniques allow searches to be narrowed down significantly, making it easier to locate documentation, research papers, configuration guides, or security-related resources without manually filtering hundreds of results.
+
+It also covered specialized search platforms commonly used by security professionals, including Shodan for discovering Internet-connected devices, Censys for searching hosts and certificates, VirusTotal for checking files, hashes, and URLs against multiple antivirus engines, and Exploit Database for finding publicly available exploits and proof-of-concept code. Finally, the room highlighted the importance of reading official documentation and following reputable security communities to stay informed about new technologies, vulnerabilities, and best practices.
