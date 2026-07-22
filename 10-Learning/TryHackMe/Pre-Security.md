@@ -281,3 +281,35 @@ Learned how the different technologies behind the web work together when accessi
 The room also introduced several components commonly found in modern web infrastructures. It explained how **Load Balancers** distribute incoming traffic across multiple servers to improve scalability and availability, how **Content Delivery Networks (CDNs)** cache static content on geographically distributed servers to reduce latency, how **databases** store and retrieve application data, and how **Web Application Firewalls (WAFs)** inspect and filter HTTP traffic to block malicious requests before they reach the web application. :contentReference[oaicite:1]{index=1}
 
 Finally, the room covered how **web servers** handle incoming requests, differentiate between **static** and **dynamic** content, execute server-side code when necessary, interact with databases, and generate the responses returned to clients. This room served as a high-level recap of the entire **How The Web Works** module, demonstrating how all of its components fit together to deliver modern web applications. :contentReference[oaicite:2]{index=2}
+
+---
+
+## The CIA Triad
+
+Learned the **CIA Triad**, the three core principles that form the foundation of information security: **Confidentiality**, **Integrity**, and **Availability**. Confidentiality ensures that information is accessible only to authorized users through mechanisms such as authentication, access control, and encryption. Integrity guarantees that data remains accurate, complete, and unmodified by unauthorized parties, while Availability ensures that systems, services, and data remain accessible whenever legitimate users need them.
+
+The room also introduced the **security mindset**, emphasizing that cybersecurity professionals continuously evaluate how actions, attacks, or failures impact one or more of these three principles. Understanding the CIA Triad provides the foundation for analyzing security risks, designing secure systems, and making decisions that balance confidentiality, integrity, and availability.
+
+---
+
+## Cryptography Concepts
+
+Learned the fundamental concepts of cryptography and its role in protecting the confidentiality, integrity, and authenticity of information. The room explained how encryption transforms plaintext into ciphertext using cryptographic algorithms and keys, preventing unauthorized parties from understanding sensitive data while allowing authorized users to recover the original information through decryption.
+
+It also introduced the differences between **symmetric** and **asymmetric encryption**, explaining their advantages, limitations, and common use cases. Additionally, the room covered **hashing** as a one-way operation for verifying data integrity, **digital signatures** for authentication and non-repudiation, and the importance of proper key management. These concepts form the foundation of secure communications and are widely used in protocols such as HTTPS, VPNs, SSH, and many other modern security technologies.
+
+---
+
+## Become a Hacker
+
+Learned the fundamentals of **Offensive Security** and the mindset of an ethical hacker, whose goal is to identify and safely exploit vulnerabilities before malicious attackers can. The room demonstrated that offensive security focuses on finding weaknesses in systems, applications, and configurations to help organizations improve their overall security posture.
+
+The room also introduced the basic stages of a web application assessment through a hands-on exercise. It covered discovering hidden resources, identifying weak authentication mechanisms, and exploiting insecure credentials in a controlled environment. Finally, it highlighted common offensive security career paths, including **Penetration Tester**, **Red Teamer**, and **Security Engineer**, emphasizing that practical experience and continuous learning are essential for developing cybersecurity skills.
+
+---
+
+## Become a Defender
+
+Learned the fundamentals of **Defensive Security** and the role of defenders in protecting an organization's infrastructure. The room explained that defensive security focuses on preventing, detecting, investigating, and responding to cyber threats while maintaining the confidentiality, integrity, and availability of systems. It also emphasized the importance of understanding how attackers operate in order to build effective defenses.
+
+The room introduced the concept of gaining visibility into an environment by identifying critical assets, monitoring systems, and applying security controls to reduce risk. Through practical exercises, it demonstrated how defenders prioritize important systems, detect suspicious activity, investigate incidents, and implement protective measures to strengthen an organization's overall security posture. These concepts provide the foundation for Blue Team roles such as SOC analysis, incident response, and security monitoring.
