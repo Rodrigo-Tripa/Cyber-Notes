@@ -21,6 +21,47 @@ Common commands include:
 - rm
 - cat
 
+## Searching
+
+Linux provides powerful tools for locating files and searching text.
+
+Common utilities include:
+
+- find
+- grep
+
+## Shell Operators
+
+The shell supports operators that allow commands to be chained or redirected.
+
+Common operators include:
+
+- >
+- >>
+- |
+- &&
+- &
+
+## Processes
+
+Programs running on Linux are represented as processes.
+
+Common management commands include:
+
+- ps
+- top
+- kill
+- pkill
+
+## Text Editors
+
+Two of the most common terminal text editors are:
+
+- Nano
+- Vim
+
+They are widely used for editing configuration files and managing remote systems.
+
 ## Useful Features
 
 - Command history
@@ -28,6 +69,10 @@ Common commands include:
 - Command options
 - Manual pages (`man`)
 - Hidden files
+
+## Automation
+
+Linux supports task automation through schedulers such as cron and systemd timers.
 
 ## Why It Matters
 

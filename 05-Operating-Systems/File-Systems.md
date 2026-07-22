@@ -19,3 +19,16 @@ File systems organize data into hierarchical directories, allowing users to effi
 ## Metadata
 
 Each file stores metadata such as its name, size, permissions, ownership, and timestamps.
+
+## Linux Directory Structure
+
+Linux organizes files in a single directory hierarchy rooted at `/`.
+
+Some important directories include:
+
+- /home
+- /etc
+- /usr
+- /var
+- /tmp
+- /opt
