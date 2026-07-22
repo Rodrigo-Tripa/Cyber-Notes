@@ -26,6 +26,14 @@ Focuses on monitoring systems, detecting threats, investigating incidents, and p
 
 Focuses on designing, implementing, and maintaining secure infrastructure.
 
+## Research
+
+- Security Researcher
+- Vulnerability Researcher
+- Malware Researcher
+
+Focuses on discovering and analyzing vulnerabilities, studying malware, reverse engineering software, and researching new attack techniques to improve cybersecurity knowledge and develop more effective defenses.
+
 ## Skills
 
 Most cybersecurity careers require knowledge of:
