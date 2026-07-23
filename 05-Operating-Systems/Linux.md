@@ -39,3 +39,45 @@ Common package managers include:
 ## Logging
 
 Linux records system and application events in log files, most of which are stored under `/var/log`. These logs are essential for troubleshooting, system monitoring, auditing, and security investigations.
+
+## Linux Shells
+
+A shell is a command-line interpreter that acts as the interface between the user and the Linux kernel. It receives commands entered by the user, interprets them, launches programs, and displays their output.
+
+Although graphical desktop environments are available, the shell remains the primary interface for system administration, remote management, automation, and cybersecurity. Most Linux servers operate without a graphical environment, making shell proficiency an essential skill.
+
+Several shells are available, each offering different features and customization options.
+
+Common Linux shells include:
+
+- Bash (Bourne Again Shell)
+- Zsh (Z Shell)
+- Fish (Friendly Interactive Shell)
+- Dash (Debian Almquist Shell)
+
+While their syntax is similar for everyday tasks, they differ in scripting capabilities, performance, configuration, and interactive features.
+
+## Environment Variables
+
+Environment variables store configuration values that influence the behavior of the operating system, the shell, and applications.
+
+They define information such as executable search paths, user directories, language settings, and temporary storage locations.
+
+Common environment variables include:
+
+- `PATH`
+- `HOME`
+- `USER`
+- `SHELL`
+- `PWD`
+- `LANG`
+
+Proper understanding of environment variables is important for configuring software, troubleshooting command execution, and developing portable scripts.
+
+## The PATH Variable
+
+The `PATH` environment variable contains a list of directories searched when a command is executed.
+
+When a user enters a command without specifying its full path, the shell searches each directory listed in `PATH` until it finds a matching executable.
+
+Maintaining a correctly configured `PATH` improves usability while preventing command execution issues caused by missing or incorrectly ordered directories.

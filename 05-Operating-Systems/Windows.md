@@ -231,6 +231,47 @@ Volume Shadow Copy Service creates point-in-time snapshots of files and storage 
 
 These snapshots are used by backup software and Windows recovery features to restore previous versions of data.
 
+## Command-Line Interfaces
+
+Although Windows is primarily known for its graphical interface, it also provides powerful command-line environments for administration, troubleshooting, and automation.
+
+Modern versions of Windows include two primary command-line interfaces:
+
+- **Command Prompt (CMD)**, the traditional command interpreter.
+- **PowerShell**, Microsoft's modern automation and scripting platform.
+
+Many administrative tasks can be performed significantly faster through the command line than through graphical tools. System administrators, penetration testers, incident responders, and malware analysts frequently rely on command-line interfaces to inspect systems, gather information, automate repetitive tasks, and remotely manage Windows hosts.
+
+## Windows Terminal
+
+Windows Terminal is Microsoft's modern terminal application that provides a unified interface for multiple command-line environments.
+
+Instead of replacing CMD or PowerShell, Windows Terminal acts as a host capable of running multiple shells simultaneously, including:
+
+- Command Prompt (CMD)
+- Windows PowerShell
+- PowerShell
+- Windows Subsystem for Linux (WSL)
+- Azure Cloud Shell
+
+It supports tabs, panes, customizable themes, Unicode, GPU-accelerated rendering, and extensive configuration options, making it the preferred terminal application on modern Windows systems.
+
+## Environment Variables
+
+Environment variables are system-defined or user-defined values that store configuration information used by Windows and applications.
+
+They allow programs to locate important directories, determine system settings, and control application behavior.
+
+Common environment variables include:
+
+- `%PATH%`
+- `%TEMP%`
+- `%USERPROFILE%`
+- `%SystemRoot%`
+- `%ProgramFiles%`
+
+Many Windows applications depend on these variables to locate executables and configuration files.
+
 ---
 
 ## Summary
