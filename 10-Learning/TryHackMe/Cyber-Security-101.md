@@ -37,3 +37,51 @@ This room expanded my Linux skills beyond basic command-line usage by introducin
 The room also introduced a collection of common Linux utilities for transferring files, downloading resources, and retrieving system information. In addition, I learned how Linux manages running processes, including how to inspect active processes, terminate unresponsive applications, and understand the relationship between programs and the operating system.
 
 Finally, I explored several administrative concepts that are fundamental to maintaining Linux systems. I learned how scheduled tasks automate repetitive operations, how package managers install and update software while handling dependencies, and how system and application logs record events that are valuable for troubleshooting, monitoring, and security investigations. Together, these topics provided a practical introduction to managing and maintaining Linux systems rather than simply using them. 
+
+---
+
+## Windows Fundamentals 1
+
+This room introduced the fundamental components of the Microsoft Windows operating system and how they are organized from both a user and administrator perspective. I learned about the different Windows editions, the graphical user interface (GUI), and the role of common desktop components such as the Start Menu, Taskbar, Notification Area, and File Explorer. The room also explained the purpose of the NTFS file system and why it is the standard file system for modern Windows installations.
+
+The room explored the importance of the `C:\Windows` directory, particularly the `System32` folder, which contains critical operating system files, libraries, and utilities required for Windows to function correctly. It also covered user accounts, user profiles, file permissions, and the difference between standard users and administrators, highlighting how Windows isolates user data while enforcing access control.
+
+Another major topic was User Account Control (UAC), which helps reduce the risk of unauthorized system changes by requiring administrative approval before privileged operations are performed. I also learned the differences between the modern Settings application and the traditional Control Panel, understanding that both are used to configure the operating system, although Microsoft is gradually moving functionality into the Settings interface.
+
+Finally, the room introduced Task Manager as an essential administration and troubleshooting tool. I learned how to monitor running applications and processes, view CPU, memory, disk, and network usage, identify active users, and manage tasks, providing a foundation for understanding Windows performance and process management in later modules.
+
+---
+
+## Windows Fundamentals 2
+
+This room expanded my understanding of Windows administration by introducing several built-in management and diagnostic tools commonly used by system administrators and security professionals. I learned how **System Configuration (MSConfig)** can be used to troubleshoot startup problems, control boot options, manage services, and access various administrative utilities from a single interface. The room also introduced **Computer Management**, which centralizes tools such as Event Viewer, Task Scheduler, Device Manager, Disk Management, Services, and Shared Folders. :contentReference[oaicite:0]{index=0}
+
+I learned the purpose of **User Account Control (UAC)** in greater detail, understanding how it reduces the attack surface by limiting administrative privileges until explicit approval is granted. The room also covered **System Information (msinfo32)**, which provides detailed information about hardware resources, installed components, drivers, operating system configuration, and the software environment, making it valuable for troubleshooting and system auditing. :contentReference[oaicite:1]{index=1}
+
+Another important topic was **Resource Monitor (resmon)**, a more advanced monitoring tool than Task Manager. It provides real-time visibility into CPU, memory, disk, and network activity, allowing administrators to identify resource bottlenecks, investigate performance issues, and analyze process behavior in greater detail. The room also reinforced the usefulness of the **Command Prompt (cmd.exe)** as a fundamental interface for system administration and automation. :contentReference[oaicite:2]{index=2}
+
+Finally, the room introduced the **Windows Registry**, the hierarchical database that stores operating system, hardware, user, and application configuration. I learned that the Registry is managed through **Registry Editor (regedit)** and that modifying registry values can significantly affect system behavior, making careful administration essential. Together, these tools provide the foundation required for diagnosing Windows systems, monitoring performance, and understanding how Windows stores and manages its configuration. :contentReference[oaicite:3]{index=3}
+
+---
+
+## Windows Fundamentals 3
+
+This room introduced the security features built into Windows that help protect the operating system against vulnerabilities, malware, unauthorized access, and data loss. I learned that Windows security is based on multiple defensive layers rather than a single protection mechanism, combining regular updates, endpoint protection, access control, encryption, and system recovery features to strengthen the overall security posture. :contentReference[oaicite:0]{index=0}
+
+A major topic was **Windows Update**, which delivers security patches, bug fixes, driver updates, and feature improvements. Keeping systems updated is one of the most effective defenses against known vulnerabilities, as attackers frequently target machines that are missing critical security patches. The room also explored **Windows Security**, Microsoft's centralized security dashboard, including **Virus & Threat Protection**, **Firewall & Network Protection**, **App & Browser Control**, and **Device Security**, explaining how each component contributes to defending the system against different types of threats. :contentReference[oaicite:1]{index=1}
+
+The room also covered **BitLocker Drive Encryption**, which protects data at rest by encrypting entire storage volumes. I learned that BitLocker helps prevent unauthorized access to sensitive information if a device is lost or stolen and that it commonly integrates with the Trusted Platform Module (TPM) to securely manage encryption keys. Another important concept was the **Volume Shadow Copy Service (VSS)**, which creates point-in-time snapshots of files and volumes, enabling backup software and system recovery features to restore previous versions of data when necessary. :contentReference[oaicite:2]{index=2}
+
+Overall, this room provided an overview of Windows' native security ecosystem, demonstrating how updates, malware protection, firewall rules, hardware-backed security, disk encryption, and recovery mechanisms work together to improve the confidentiality, integrity, and availability of Windows systems. These concepts establish a foundation for understanding Windows hardening and defensive security practices used in enterprise environments. :contentReference[oaicite:3]{index=3} 
+
+---
+
+## Active Directory Basics
+
+This room introduced Microsoft Active Directory (AD), the centralized directory service used to manage identities, devices, and resources in Windows enterprise environments. I learned that Active Directory allows organizations to authenticate users, authorize access to network resources, and simplify administration by managing thousands of users and computers from a centralized infrastructure. I also understood the role of a **Domain Controller (DC)** as the server responsible for hosting Active Directory services and processing authentication requests. :contentReference[oaicite:0]{index=0}
+
+The room explored the logical structure of an Active Directory environment, including **domains**, **Organizational Units (OUs)**, **users**, **groups**, and **computer objects**. I learned that domains provide administrative and security boundaries, while OUs organize objects to simplify delegation and policy management. Groups were presented as the primary mechanism for assigning permissions efficiently instead of configuring access for each user individually. :contentReference[oaicite:1]{index=1}
+
+Another important concept was **Group Policy (GPO)**, which enables administrators to centrally configure security settings, software deployment, password policies, desktop configurations, and many other operating system settings across multiple computers and users. The room also introduced the two primary Windows authentication protocols, **Kerberos** and **NTLM**, explaining that Kerberos is the default authentication mechanism in modern Active Directory environments, while NTLM remains available for compatibility with legacy systems. :contentReference[oaicite:2]{index=2}
+
+Finally, I learned how multiple domains can be connected through **trees**, **forests**, and **trust relationships** to create larger enterprise infrastructures while maintaining centralized identity management. Understanding how these components interact provides the foundation required for both Windows system administration and Active Directory security, as most enterprise authentication, authorization, and privilege management depend on these concepts. :contentReference[oaicite:3]{index=3}
