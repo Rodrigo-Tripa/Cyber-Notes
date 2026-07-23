@@ -313,3 +313,7 @@ The room also introduced the basic stages of a web application assessment throug
 Learned the fundamentals of **Defensive Security** and the role of defenders in protecting an organization's infrastructure. The room explained that defensive security focuses on preventing, detecting, investigating, and responding to cyber threats while maintaining the confidentiality, integrity, and availability of systems. It also emphasized the importance of understanding how attackers operate in order to build effective defenses.
 
 The room introduced the concept of gaining visibility into an environment by identifying critical assets, monitoring systems, and applying security controls to reduce risk. Through practical exercises, it demonstrated how defenders prioritize important systems, detect suspicious activity, investigate incidents, and implement protective measures to strengthen an organization's overall security posture. These concepts provide the foundation for Blue Team roles such as SOC analysis, incident response, and security monitoring.
+
+===
+
+# END
