@@ -85,3 +85,39 @@ The room explored the logical structure of an Active Directory environment, incl
 Another important concept was **Group Policy (GPO)**, which enables administrators to centrally configure security settings, software deployment, password policies, desktop configurations, and many other operating system settings across multiple computers and users. The room also introduced the two primary Windows authentication protocols, **Kerberos** and **NTLM**, explaining that Kerberos is the default authentication mechanism in modern Active Directory environments, while NTLM remains available for compatibility with legacy systems. :contentReference[oaicite:2]{index=2}
 
 Finally, I learned how multiple domains can be connected through **trees**, **forests**, and **trust relationships** to create larger enterprise infrastructures while maintaining centralized identity management. Understanding how these components interact provides the foundation required for both Windows system administration and Active Directory security, as most enterprise authentication, authorization, and privilege management depend on these concepts. :contentReference[oaicite:3]{index=3}
+
+---
+
+## Windows Command Line
+
+This room introduced the Microsoft Windows Command Prompt (`cmd.exe`), the default command-line interpreter used to interact with Windows systems. I learned why command-line interfaces remain essential despite the availability of graphical interfaces, particularly for system administration, automation, remote management, troubleshooting, and cybersecurity operations where speed and efficiency are critical. The room reinforced that mastering the command line allows security professionals to inspect and manage systems far more effectively than relying solely on graphical tools. :contentReference[oaicite:0]{index=0}
+
+I learned how to navigate the Windows filesystem using commands such as `cd`, `dir`, and `tree`, inspect environment variables with `set`, and manipulate files and directories using common file management commands. The room also introduced wildcard characters to efficiently operate on multiple files simultaneously, demonstrating how routine administrative tasks can be performed quickly from the terminal. These skills form the foundation for interacting with Windows systems during administration, incident response, and penetration testing. :contentReference[oaicite:1]{index=1}
+
+Another major focus was gathering system and network information directly from the command line. I explored commands capable of identifying operating system details, hardware configuration, hostname, network interfaces, IP configuration, DNS resolution, routing information, and active network connections. Understanding these commands is fundamental for troubleshooting connectivity issues, performing host enumeration, validating system configurations, and collecting information during security assessments. :contentReference[oaicite:2]{index=2}
+
+Finally, the room introduced process management and several administrative utilities commonly used by Windows administrators. I learned how to inspect running processes, monitor active services and network sessions, terminate processes when necessary, and use built-in help documentation to discover command options. The room also highlighted additional maintenance and diagnostic tools such as filesystem checking, driver enumeration, and system file verification, providing a practical introduction to day-to-day Windows administration through the command line while preparing for more advanced topics such as PowerShell. :contentReference[oaicite:3]{index=3}
+
+---
+
+## Windows PowerShell
+
+This room introduced Microsoft PowerShell, a modern command-line shell and scripting language built on the .NET platform. Unlike the traditional Windows Command Prompt, PowerShell works with structured objects instead of plain text, allowing commands to exchange rich data through the pipeline. I learned why PowerShell has become the primary automation and administration tool for Windows environments, making it indispensable for system administrators, cybersecurity professionals, and incident responders. :contentReference[oaicite:0]{index=0}
+
+I learned the fundamental structure of PowerShell commands, known as cmdlets, which follow the `Verb-Noun` naming convention (such as `Get-Process` and `Get-Service`). The room introduced navigation through the Windows filesystem, file and directory management, and the use of built-in help documentation to understand available cmdlets and their parameters. This consistent syntax makes PowerShell easier to learn while providing significantly more functionality than the traditional Command Prompt. :contentReference[oaicite:1]{index=1}
+
+Another major concept was PowerShell's object pipeline. Instead of passing text between commands, PowerShell passes .NET objects that can be filtered, sorted, selected, and formatted using cmdlets such as `Where-Object`, `Sort-Object`, and `Select-Object`. This object-oriented design enables powerful data processing and simplifies complex administrative tasks without requiring external utilities or extensive text parsing. :contentReference[oaicite:2]{index=2}
+
+The room also demonstrated how PowerShell can gather system and network information, monitor processes and services, and automate repetitive tasks through scripting. I was introduced to variables, loops, conditional statements, and basic scripting concepts that allow administrative tasks to be automated efficiently. These capabilities make PowerShell one of the most important tools in Windows administration and cybersecurity, where it is widely used for system management, incident response, forensic investigations, and security assessments. :contentReference[oaicite:3]{index=3}
+
+---
+
+## Linux Shells
+
+This room explored Linux shells as the primary interface between users and the operating system. I learned that a shell is a command-line interpreter responsible for receiving user input, launching programs, managing processes, and interacting with the Linux kernel. While Bash is the most common shell, the room introduced the existence of alternative shells such as Zsh, Fish, and Dash, each offering different features, performance characteristics, and customization options depending on the user's needs.
+
+The room explained how Linux executes commands by searching directories listed in the `PATH` environment variable and demonstrated how shell built-in commands differ from external executables stored on the filesystem. I also learned how environment variables influence shell behavior and how user-specific configuration files allow the shell environment to be customized. Understanding these concepts is essential for configuring Linux systems, troubleshooting command execution, and creating efficient working environments.
+
+Another important topic was command execution and shell features that improve productivity. The room introduced command history, tab completion, aliases, command substitution, and shell expansion mechanisms that simplify repetitive tasks and reduce typing. These features allow users to work more efficiently while interacting with the operating system entirely through the command line.
+
+Finally, the room reinforced the role of shells in system administration, automation, and cybersecurity. Since nearly every Linux server, cloud instance, or penetration testing environment relies heavily on shell access, mastering shell behavior and navigation provides a strong foundation for Bash scripting, privilege escalation techniques, remote administration through SSH, and advanced Linux system management.
